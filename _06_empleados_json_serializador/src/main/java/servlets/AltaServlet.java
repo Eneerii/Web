@@ -1,7 +1,7 @@
 package servlets;
 
 import java.io.IOException;
-import java.util.Date;
+import java.time.LocalDate;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -25,7 +25,7 @@ public class AltaServlet extends HttpServlet {
 		String nombre=request.getParameter("nombre");
 		String departamento=request.getParameter("departamento");
 		double salario=Double.parseDouble(request.getParameter("salario"));
-		Date fecha=new Date();
+		LocalDate fecha=LocalDate.now();
 		Empleado empleado=new Empleado(nombre, departamento, salario, fecha);
 		service.guardarEmpleado(empleado);
 		request.getRequestDispatcher("inicio.html").forward(request, response);

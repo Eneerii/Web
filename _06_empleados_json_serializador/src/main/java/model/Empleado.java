@@ -1,6 +1,6 @@
 package model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,6 +12,6 @@ public class Empleado {
 	private String nombre;
 	private String departamento;
 	private double salario;
-	private Date fecha;
+	private LocalDate fecha;
 	
 }

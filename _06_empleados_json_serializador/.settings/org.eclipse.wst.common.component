@@ -28,7 +28,7 @@
         
         
         <property name="java-output-path" value="/_03_empleados/build/classes"/>
-        <property name="context-root" value="_05_empleados_json"/>
+        <property name="context-root" value="_06_empleados_serializador"/>
                                             
     
     
